@@ -1,0 +1,181 @@
+:root {
+    --kit-font-family: "Montserrat", sans-serif;
+}
+
+button:disabled,
+.disabled {
+    cursor: not-allowed;
+}
+
+@media (min-width: 992px) {
+    .d-lg-table-cell {
+        display: table-cell !important;
+    }
+}
+
+@media (min-width: 768px) {
+    .d-md-table-cell {
+        display: table-cell !important;
+    }
+}
+
+.cui__topbar--fixed .cui__layout__header {
+    z-index: 98 !important;
+}
+
+.licorminer_logo {
+    width: 20px;
+}
+
+.input-apcode {
+    font-size: 2.5rem;
+
+    letter-spacing: 0.5rem;
+
+    text-align: center;
+}
+
+.input-gg2fa {
+    font-size: 2.5rem;
+
+    letter-spacing: 0.5rem;
+
+    text-align: center;
+}
+
+.cart-label {
+    display: none;
+}
+
+@media (min-width: 426px) {
+    .cart-label {
+        display: inline;
+    }
+
+    .cart .badge {
+        left: 6rem;
+    }
+}
+
+.letter-spacing-sm {
+    letter-spacing: 0.1rem;
+}
+
+.max-width-50 {
+    max-width: 3.33rem;
+}
+
+.min-width-50 {
+    min-width: 3.33rem;
+}
+
+.bg-transparent {
+    background: transparent;
+}
+
+.kit-crypto-icon {
+    width: 1.66rem;
+
+    height: 1.66rem;
+
+    overflow: hidden;
+
+    background-color: transparent;
+
+    text-align: center;
+
+    vertical-align: middle;
+}
+
+.kit-crypto-icon--size64 {
+    width: 4.5rem;
+
+    height: 4.5rem;
+
+    border-radius: 5px;
+
+    overflow: hidden;
+
+    background-color: transparent;
+
+    text-align: center;
+
+    vertical-align: middle;
+}
+
+.kit-crypto-icon img,
+.kit-crypto-icon--size64 img {
+    height: 100%;
+
+    width: auto;
+}
+
+.font-weight-bold {
+    font-weight: 600 !important;
+}
+
+.card-group-headerText {
+    position: absolute;
+
+    top: 1.33rem;
+
+    left: 1.33rem;
+}
+
+.card-banner {
+    max-width: 100%;
+
+    min-height: 100px;
+}
+
+.text-gray-fix {
+    color: #aeaee0 !important;
+}
+
+.text-white-fix {
+    color: #fff !important;
+}
+
+.text-dark-fix {
+    color: #141322 !important;
+}
+
+.mining-product-img-head {
+    background-size: cover;
+
+    background-position: top;
+
+    border-radius: 5px 5px 0 0;
+}
+
+.kit__g17__flag {
+    min-width: 70px;
+
+    text-align: center;
+}
+
+.text-deleted {
+    text-decoration-line: line-through !important;
+}
+
+.btn-w-100 {
+    min-width: 100px;
+}
+
+.kit__chat {
+    position: fixed;
+    z-index: 998;
+    bottom: 10rem;
+    right: 1.5rem;
+    transition: all 0.2s ease-in-out;
+}
+@media (max-width: 768px) {
+    .kit__chat {
+        right: 1.3rem;
+    }
+}
+.dropify-wrapper,
+.dropify-wrapper .dropify-preview,
+.dropify-wrapper .dropify-preview .dropify-render img {
+    background-color: #f7f7f7;
+}
