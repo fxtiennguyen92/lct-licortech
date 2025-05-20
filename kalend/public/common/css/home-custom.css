@@ -1,0 +1,108 @@
+:root {
+    --font-primary: "Quicksand", sans-serif;
+    --color-primary: #0774ff;
+}
+
+@media screen and (max-width: 576px) {
+    .rts-hosting-feature-area .section-inner .right-side-content {
+        margin-left: 0;
+    }
+    .rts-hero-two__images.mobile-margin-top-100 {
+        margin-top: 80px;
+    }
+    .section-title-area .desc {
+        font-size: 18px;
+    }
+    .rts-service-two .service-two-small {
+        padding: 20px;
+    }
+    .rts-service-two .service-two {
+        padding: 60px 20px 40px 20px;
+    }
+    .rts-service-two .service-two-small__content .service-btn {
+        margin-top: 0px;
+    }
+    .rts-service-two .service-two-small__content .description,
+    .rts-service-two .service-two-small__content .min-height {
+        min-height: 100px !important;
+    }
+}
+@media screen and (max-width: 768px) and (min-width: 577px) {
+    .rts-service-two .service-two-small__content .description,
+    .rts-service-two .service-two-small__content .min-height {
+        min-height: 130px !important;
+    }
+}
+
+.rts-service-two .service-two-small__content .min-height {
+    min-height: 104px !important;
+}
+
+.rts-section__two .title {
+    margin-bottom: 10px;
+}
+
+.rts-footer__copyright-two__wrapper p {
+    font-size: 13px;
+}
+
+.rts-support__wrapper--content .feature__list {
+    width: 100%;
+}
+.rts-support__wrapper--content .feature__list .feature__item {
+    text-transform: none;
+}
+
+@media screen and (max-width: 992px) {
+    .rts-support.black__friday--support .rts-support__wrapper {
+        padding: 0 20px;
+    }
+}
+
+.section-title-area .desc {
+    font-size: 16px;
+}
+.rts-feature-area .section-title-btn-area .section-title-area .section-title {
+    margin-bottom: 10px;
+}
+
+.rts-hero-banner.banner-six::before {
+    background: rgba(1, 5, 13, 0.8) 63.62%;
+}
+
+.rts-hero-banner.banner-six {
+    padding: 0;
+    position: initial !important;
+    height: 100%;
+}
+
+.banner-six > .container {
+    margin-top: 40vh;
+}
+@media (max-width: 376px) {
+    .banner-six > .container {
+        margin-top: 27vh;
+    }
+}
+
+.hero-banner-slide {
+    min-height: 100vh !important;
+}
+
+.hero-image-big {
+    position: absolute;
+    bottom: -35%;
+    right: 40px;
+    z-index: -1;
+}
+
+@media (max-width: 768px) {
+    .hero-image-big {
+        display: none;
+    }
+}
+
+.rts-hero-two__content .title span {
+    font-weight: var(--semibold);
+    color: var(--color-primary);
+}
