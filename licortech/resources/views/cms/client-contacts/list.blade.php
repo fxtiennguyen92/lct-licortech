@@ -28,11 +28,10 @@
                     <table data-order='[[ 0, "desc" ]]' class="table table-hover nowrap" id="table">
                         <thead class="thead-default">
                             <tr>
-                                <th class="text-center" style="width: 200px">Request Info</th>
-                                <th>Client Info</th>
-                                <th>Requirement</th>
-                                <th>Reply</th>
-                                <th>Delete</th>
+                                <th class="text-center" style="width: 200px">Request</th>
+                                <th>Appointment Date</th>
+                                <th>Client</th>
+                                <th>Action</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -40,24 +39,15 @@
                                 <tr>
                                     <td>
                                         <span style="display: none">{{ date('YmdHi', strtotime($row->created_at)) }}</span>
-                                        <div>
-                                            @if ($row->type == 0)
-                                                <span class="badge badge-pill badge-info">Form</span>
-                                            @else
-                                                <span class="badge badge-pill badge-danger">Call</span>
-                                            @endif
-                                            @if ($row->status == 0)
-                                                <span class="badge badge-pill badge-warning">Pending</span>
-                                            @else
-                                                <span class="badge badge-pill badge-success">Replied</span>
-                                            @endif
-                                        </div>
-                                        <div class="mt-2"><small>From:</small>
+                                        <div><small>From:</small>
                                             <b>{{ config('regions.countries.' . $row->country_code) }}</b></div>
                                         <div><small>Created:</small> {{ date('d-m-Y H:i', strtotime($row->created_at)) }}
                                         </div>
+                                    </td>
+                                    <td>
+                                        <span style="display: none">{{ date('YmdHi', strtotime($row->reserved_at)) }}</span>
                                         @if ($row->reserved_at)
-                                            <div><small>Reserve:</small>
+                                            <div>
                                                 {{ date('d-m-Y H:i', strtotime($row->reserved_at)) }}</div>
                                         @endif
                                     </td>
@@ -68,17 +58,6 @@
                                         @endif
                                         @if ($row->phone)
                                             <div>{{ $row->phone }}</div>
-                                        @endif
-                                    </td>
-                                    <td>{!! $row->content !!}</td>
-                                    <td>
-                                        @if ($row->status !== 1)
-                                            <a href="{{ route('cms.contacts.reply', $row->id) }}"
-                                                class="btn btn-sm btn-outline-success">
-                                                <i class="fe fe-check"></i> Replied</a>
-                                        @else
-                                            <div>{{ date('d-m-Y H:i', strtotime($row->updated_at)) }}</div>
-                                            {{ $row->repliedBy->email }}
                                         @endif
                                     </td>
                                     <td>

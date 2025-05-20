@@ -30,39 +30,6 @@
                                     <div class="font-size-36 mb-n2">{{ $reserve }}</div>
                                 </div>
                             </div>
-
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-4 col-sm-6">
-                    <a class="card bg-danger border-0 mb-4" href="{{ route('cms.contacts') }}">
-                        <div class="card-body">
-                            <div class="text-white font-weight-bold">
-                                <div class="font-size-21 mb-2">No Reply Yet</div>
-                                <div class="d-flex align-items-end flex-wrap">
-                                    <div class="pr-3 mr-auto">
-                                        <i class="fe fe-message-circle font-size-48"></i>
-                                    </div>
-                                    <div class="font-size-36 mb-n2">{{ $unreply }}</div>
-                                </div>
-                            </div>
-
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-4 col-sm-6">
-                    <a class="card bg-success border-0 mb-4" href="{{ route('cms.contacts') }}">
-                        <div class="card-body">
-                            <div class="text-white font-weight-bold">
-                                <div class="font-size-21 mb-2">Replied Total</div>
-                                <div class="d-flex align-items-end flex-wrap">
-                                    <div class="pr-3 mr-auto">
-                                        <i class="fe fe-user font-size-48"></i>
-                                    </div>
-                                    <div class="font-size-36 mb-n2">{{ $total }}</div>
-                                </div>
-                            </div>
-
                         </div>
                     </a>
                 </div>

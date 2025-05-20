@@ -7,50 +7,5 @@
         <lastmod>2024-04-18T15:04:13+00:00</lastmod>
         <priority>1.00</priority>
     </url>
-    <url>
-        <loc>https://licortech.com/about</loc>
-        <lastmod>2024-04-18T15:04:13+00:00</lastmod>
-        <priority>0.80</priority>
-    </url>
-    <url>
-        <loc>https://licortech.com/services/fastweb</loc>
-        <lastmod>2024-04-18T15:04:13+00:00</lastmod>
-        <priority>0.80</priority>
-    </url>
-    <url>
-        <loc>https://licortech.com/services/specific_web</loc>
-        <lastmod>2024-04-18T15:04:13+00:00</lastmod>
-        <priority>0.80</priority>
-    </url>
-    <url>
-        <loc>https://licortech.com/services/mobile_app</loc>
-        <lastmod>2024-04-18T15:04:13+00:00</lastmod>
-        <priority>0.80</priority>
-    </url>
-    <url>
-        <loc>https://licortech.com/services/outsourcing</loc>
-        <lastmod>2024-04-18T15:04:13+00:00</lastmod>
-        <priority>0.80</priority>
-    </url>
-    <url>
-        <loc>https://licortech.com/services/startup</loc>
-        <lastmod>2024-04-18T15:04:13+00:00</lastmod>
-        <priority>0.80</priority>
-    </url>
-    <url>
-        <loc>https://licortech.com/services/ai</loc>
-        <lastmod>2024-04-18T15:04:13+00:00</lastmod>
-        <priority>0.80</priority>
-    </url>
-    <url>
-        <loc>https://licortech.com/contact</loc>
-        <lastmod>2024-04-18T15:04:13+00:00</lastmod>
-        <priority>0.80</priority>
-    </url>
-    <url>
-        <loc>https://licortech.com/book-a-call</loc>
-        <lastmod>2024-04-18T15:04:13+00:00</lastmod>
-        <priority>0.80</priority>
-    </url>
 </urlset>
 

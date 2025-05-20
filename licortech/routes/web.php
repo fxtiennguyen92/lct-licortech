@@ -154,18 +154,14 @@ Route::controller(WebPageController::class)->group(function() {
     Route::get('services', 'redirectDefaultServicePage')->name('services');
     Route::get('services/{route}', 'servicePage')->name('services.page');
 
-
-
-    //Route::get('contact', 'contactPage')->name('contact');
-
     //Route::get('blog', 'blogPage')->name('blog');
     //Route::get('post/{route}', 'postPage')->name('post');
 
     Route::get('book-a-call', 'callPage')->name('call');
     Route::post('book-a-call', 'submitCallBooking')->name('call');
 
-    Route::get('contact', 'contactPage')->name('contact');
-    Route::post('contact', 'submitContact')->name('contact');
+    // Route::get('contact', 'contactPage')->name('contact');
+    // Route::post('contact', 'submitContact')->name('contact');
 
     Route::get('thanks', 'thanksPage')->name('thanks');
 });

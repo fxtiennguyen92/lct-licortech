@@ -288,7 +288,7 @@
                         <h4>{{ $contactSection->texts[0]->{'content' . $curLanguage} }}</h4>
                     </div>
                     <div class="cta-btn">
-                        <a href="{{ route('contact') }}" class="contact__us rts-btn rts-btn-secondary">
+                        <a href="{{ route($contactSection->buttons[0]->redirect) }}" class="contact__us rts-btn rts-btn-secondary">
                             {{ $contactSection->buttons[0]->{'text' . $curLanguage} }}
                         </a>
                     </div>
