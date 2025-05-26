@@ -43,7 +43,7 @@
     <link rel="stylesheet preload" href="assets/css/style.min.css" as="style">
     <link rel="stylesheet preload" href="common/css/home-custom.css" as="style">
 
-    <script src="https://www.google.com/recaptcha/enterprise.js?render={{ config('app.recaptcha_site_key') }}"></script>
+    <script src="https://www.google.com/recaptcha/enterprise.js" async defer></script>
 
     @stack('css')
 
@@ -223,7 +223,6 @@
     </div>
     <!-- FOOTER AREA END -->
 
-    <div id="anywhere-home"></div>
     <!-- side bar area  -->
     <div id="side-bar" class="side-bar header-two">
         <button class="close-icon-menu" aria-label="Close"><i class="fa-thin fa-xmark"></i></button>

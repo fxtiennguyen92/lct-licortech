@@ -441,7 +441,7 @@
 
                             <label>{{ __('text.contact.accept_condition') }}</label>
 
-                            <div class="g-recaptcha" data-sitekey="{{ config('app.recaptcha_site_key') }}"
+                            <div class="g-recaptcha mb-4" data-sitekey="{{ config('app.recaptcha_site_key') }}"
                                 data-action="CONTACT"></div>
                             <button type="submit" class="submit__btn">{{ __('button.submit') }}</button>
                         </form>
