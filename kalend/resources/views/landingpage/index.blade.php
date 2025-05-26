@@ -43,7 +43,7 @@
     <link rel="stylesheet preload" href="assets/css/style.min.css" as="style">
     <link rel="stylesheet preload" href="common/css/home-custom.css" as="style">
 
-    <script src="https://www.google.com/recaptcha/enterprise.js?render=6LfMnEcrAAAAAHycKVU5Q1RgwPhuSmPsvx1JT5fP"></script>
+    <script src="https://www.google.com/recaptcha/enterprise.js?render={{ config('app.recaptcha_site_key') }}"></script>
 
     @stack('css')
 
