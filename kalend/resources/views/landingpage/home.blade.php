@@ -400,7 +400,7 @@
                         <div class="contact-form__content sal-animate" data-sal="slide-down" data-sal-delay="100"
                             data-sal-duration="800">
                             <div class="contact-form__content--image">
-                                <img src="assets/images/contact/contact-form.png" width="260" height="188"
+                                <img src="assets/images/contact-form.png" width="260" height="188"
                                     alt="">
                             </div>
                             <h1 class="contact-form__content--title">
