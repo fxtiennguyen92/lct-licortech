@@ -1,0 +1,61 @@
+{
+    "save": "économiser",
+    "monthly": "mensuel",
+    "yearly": "annuel",
+    "month": "mois",
+    "year": "année",
+    "get_quote": "Demander un devis",
+
+    "btn.contact": "Nous contacter",
+    "btn.contact_now": "Nous contacter",
+    "btn.more_feature": "Voir plus",
+    "btn.less_feature": "Fermer",
+
+    "packages.basic.name": "Simple",
+    "packages.basic.description": "Vous avez déjà un site Web<br/>Fonction de gestion de base",
+
+    "packages.premium.name": "Complet",
+    "packages.premium.description": "Convient à une nouvelle entreprise<br/>Affichage du site Web et gestion complète",
+
+    "packages.option.name": "Fonctionnalité",
+    "packages.option.description": "Fonction spéciale, design unique.",
+
+    "packages.details.reservation": "Module de réservation",
+    "packages.details.reservation_i": "Le module est intégré à votre site web existant, ainsi qu'à la fonction de gestion des réservations.",
+
+    "packages.details.client": "Module de gestion des clients",
+    "packages.details.client_i": "Gérez les informations de fidélisation et les promotions des clients.",
+
+    "packages.details.google_business": "Configurer Google Business",
+    "packages.details.google_business_i": "Assistance à l'installation et à la configuration des informations commerciales sur Google Business.",
+
+    "packages.details.support": "Support technique gratuit",
+    "packages.details.support_i": "Tous les problèmes techniques liés à l'application Kalend seront toujours pris en charge gratuitement.",
+
+    "packages.details.web": "1 Site Web - Basique",
+    "packages.details.web_i": "UN site web réalisé par Kalend dans la collection.",
+
+    "packages.details.domain": "1 Nom de domaine gratuit",
+    "packages.details.domain_i": "Nom de domaine gratuit pendant les 12 premiers mois.",
+
+    "packages.details.ssl": "1 Certificat SSL gratuit",
+    "packages.details.ssl_i": "Certificat SSL gratuit pendant les 12 premiers mois.",
+
+    "packages.details.email": "1 Email professionnel gratuit",
+    "packages.details.email_i": "Email professionnel gratuit, défini en fonction de la structure du domaine d'activité.",
+    
+    "packages.exts.noti": "Envoyer email pour rappeler la réservation",
+    "packages.exts.noti_i": "Les emails de rappel de réservation sont envoyés automatiquement, réduisant ainsi les oublis des clients.",
+
+    "packages.exts.feedback": "Envoyer email pour obtenir des commentaires",
+    "packages.exts.feedback_i": "Envoyer des emails d'appréciation des clients et recevez des commentaires.",
+
+    "packages.opts.sms": "Forfait SMS",
+    "packages.opts.sms_i": "Envoyer des SMS de rappel de réservation automatiques, rester connecté avec vos clients via des SMS.",
+
+    "packages.opts.web_pro": "Site Web spécial",
+    "packages.opts.web_pro_i": "Le site Web est conçu sur mesure, avec des fonctions spécifiques à vos besoins.",
+
+    "packages.opts.branch": "Développer davantage de succursales et de magasins",
+    "packages.opts.branch_i": "Gérez toutes les succursales sur le même système."
+}

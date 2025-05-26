@@ -1,0 +1,61 @@
+{
+    "save": "tiết kiệm",
+    "monthly": "tháng",
+    "yearly": "năm",
+    "month": "tháng",
+    "year": "năm",
+    "get_quote": "Theo báo giá",
+
+    "btn.contact": "Liên hệ",
+    "btn.contact_now": "Liên hệ ngay",
+    "btn.more_feature": "Chức năng khác",
+    "btn.less_feature": "Thu gọn",
+
+    "packages.basic.name": "Cơ bản",
+    "packages.basic.description": "Nếu bạn đã có website<br/>Chức năng quản lý lịch hẹn cơ bản",
+
+    "packages.premium.name": "Toàn diện",
+    "packages.premium.description": "Dành cho một doanh nghiệp mới<br/>Website hiển thị và quản lý toàn diện",
+
+    "packages.option.name": "Đặc trưng",
+    "packages.option.description": "Chức năng đặc thù, thiết kế riêng biệt.",
+
+    "packages.details.reservation": "Module quản lý lịch hẹn",
+    "packages.details.reservation_i": "Module được tích hợp vào trang web sẵn có của bạn, cùng với trang quản lý lịch hẹn",
+
+    "packages.details.client": "Quản lý Khách hàng",
+    "packages.details.client_i": "Quản lý thông tin khách hàng thân thiết, chương trình khuyến mãi.",
+
+    "packages.details.google_business": "Thiết lập Google Business",
+    "packages.details.google_business_i": "Hỗ trợ cài đặt, thiết lập thông tin doanh nghiệp tại Google Business.",
+
+    "packages.details.support": "Miễn phí hỗ trợ kỹ thuật",
+    "packages.details.support_i": "Tất cả các vấn đề kỹ thuật liên quan đến ứng dụng Kalend sẽ luôn được hỗ trợ miễn phí.",
+
+    "packages.details.web": "1 Website - Basic",
+    "packages.details.web_i": "Website được Kalend thực hiện sẵn trong bộ sưu tập.",
+
+    "packages.details.domain": "1 Tên miền miễn phí",
+    "packages.details.domain_i": "Tên miền miễn phí trong 12 tháng đầu tiên.",
+
+    "packages.details.ssl": "1 Chứng chỉ SSL miễn phí",
+    "packages.details.ssl_i": "Chứng chỉ SSL miễn phí trong 12 tháng đầu tiên.",
+
+    "packages.details.email": "1 Email doanh nghiệp miễn phí",
+    "packages.details.email_i": "Email doanh nghiệp miễn phí, được đặt theo cấu trúc tên miền của doanh nghiệp.",
+    
+    "packages.exts.noti": "Email nhắc lịch hẹn",
+    "packages.exts.noti_i": "Email nhắc lịch hẹn được gửi tự động, hạn chế khách hàng quên hẹn.",
+
+    "packages.exts.feedback": "Email nhận feedback",
+    "packages.exts.feedback_i": "Email nhận review/feedback được gửi tự động đến khách hàng sau mỗi lịch hẹn thành công.",
+
+    "packages.opts.sms": "Gói SMS",
+    "packages.opts.sms_i": "Gửi SMS nhắc lịch hẹn tự động, giữ kết nối với khách hàng bằng tin nhắn.",
+
+    "packages.opts.web_pro": "Thiết kế web riêng theo thương hiệu",
+    "packages.opts.web_pro_i": "Trang web được thiết kế riêng, với các chức năng đặc thù với nhu cầu.",
+
+    "packages.opts.branch": "Mở rộng thêm chi nhánh",
+    "packages.opts.branch_i": "Quản lý tất cả các chi nhánh trên cùng một hệ thống."
+}

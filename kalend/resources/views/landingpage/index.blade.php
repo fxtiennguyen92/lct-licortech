@@ -34,8 +34,8 @@
     <link rel="stylesheet preload" href="assets/css/plugins/metismenu.css" as="style">
 
     {{-- <link rel="stylesheet preload" href="assets/css/style.css" as="style"> --}}
-    <link rel="stylesheet preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/fontawesome.min.css"
-        async>
+    <link rel="stylesheet preload"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/fontawesome.min.css" async>
     {{-- <link rel="stylesheet"
         href="https://cdn.jsdelivr.net/gh/eliyantosarage/font-awesome-pro@main/fontawesome-pro-6.5.1-web/css/all.min.css"
         rel="stylesheet" async> --}}
@@ -43,9 +43,9 @@
     <link rel="stylesheet preload" href="assets/css/style.min.css" as="style">
     <link rel="stylesheet preload" href="common/css/home-custom.css" as="style">
 
-    @stack('css')
+    <script src="https://www.google.com/recaptcha/enterprise.js?render=6LfMnEcrAAAAAHycKVU5Q1RgwPhuSmPsvx1JT5fP"></script>
 
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    @stack('css')
 
     {!! $common->src_tag_head !!}
 </head>
@@ -71,7 +71,7 @@
                                 @foreach ($nav as $navigator)
                                     @if ($navigator->redirect != 'services')
                                         <li class="menu-item">
-                                            <a href="{{ $navigator->redirect ? route($navigator->redirect) : 'javascript:void(0)' }}"
+                                            <a href="{{ $navigator->page_id ? route($navigator->redirect) : $navigator->redirect }}"
                                                 class="hostie-dropdown-main-element">{{ $navigator->{'name' . $curLanguage} }}</a>
                                         </li>
                                     @else
@@ -119,18 +119,7 @@
                     <!-- FOR HEADER RIGHT -->
                     <div class="rts-header__right">
                         <div class="button-area">
-                            <ul class="list-unstyled hostie-desktop-menu">
-                                <li class="menu-item hostie-has-dropdown">
-                                    <a href="index.html" class="hostie-dropdown-main-element">Home</a>
-                                    <div class="has-homemenu">
-                                        <div class="row gx-5 row-cols-1 row-cols-md-2 row-cols-lg-4 row-cols-xl-5">
-                                            <div class="col homemenu">asdfasdf</div>
-                                        </div>
-                                    </div>
-                                </li>
-                            </ul>
-
-                            <a href="#anywhere-home" class="get-started__btn ">{{ __('text.contact_us') }}</a>
+                            <a href="#contact" class="get-started__btn ">{{ __('text.contact_us') }}</a>
                         </div>
                         <button id="menu-btn" aria-label="Menu" class="mobile__active menu-btn"><i
                                 class="fa-solid fa-bars"></i></button>
@@ -153,10 +142,8 @@
                         <a href="{{ route('home') }}" class="footer__logo">
                             <img src="{{ $common->web_logo_2 }}" alt="{{ $common->web_name }}">
                         </a>
-
-                        <h5 class="mb--0">France</h5>
-                        <p class="brand-desc address">{{ $office->address_1 }}</p>
-
+                        <p class="brand-desc">Outil de gestion des réservations</p>
+                        <div class="separator site-default-border"></div>
                         <div class="contact-method mt--10">
                             @if ($office->tel_1)
                                 <a href="tell:{{ $office->tel_1 }}"><span><i
@@ -178,7 +165,7 @@
                                 @foreach ($nav as $navigator)
                                     @if ($navigator->redirect != '' && $navigator->redirect != 'services')
                                         <li><a
-                                                href="{{ route($navigator->redirect) }}">{{ $navigator->{'name' . $curLanguage} }}</a>
+                                                href="{{ $navigator->page_id ? route($navigator->redirect) : $navigator->redirect }}">{{ $navigator->{'name' . $curLanguage} }}</a>
                                         </li>
                                     @endif
                                 @endforeach
@@ -228,7 +215,8 @@
         <div class="container">
             <div class="row">
                 <div class="rts-footer__copyright-two__wrapper">
-                    <p class="copyright">{{ $common->copyright }}</p>
+                    <p class="copyright">© Copyright Kalend - product of <a href="https://licortech.com"
+                            target="_blank">Licortech</a></p>
                 </div>
             </div>
         </div>
@@ -246,7 +234,7 @@
                     @foreach ($nav as $navigator)
                         @if ($navigator->redirect != 'services')
                             <li>
-                                <a href="{{ $navigator->redirect ? route($navigator->redirect) : 'javascript:void(0)' }}"
+                                <a href="{{ $navigator->page_id ? route($navigator->redirect) : $navigator->redirect }}"
                                     class="main">{{ $navigator->{'name' . $curLanguage} }}</a>
                             </li>
                         @else
@@ -322,6 +310,8 @@
 
     <script defer src="assets/js/metismenu.min.js"></script>
     <script defer src="assets/js/main.min.js"></script>
+
+    <script defer src="common/js/custom.js"></script>
 
     @stack('js')
     {!! $common->src_tag_body_bottom !!}

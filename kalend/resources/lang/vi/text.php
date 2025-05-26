@@ -47,6 +47,6 @@ return [
         'phone_placeholder' => 'Số điện thoại',
         'region_placeholder' => 'Vị trí doanh nghiệp',
         'message_placeholder' => 'Mô tả ngắn gọn về yêu cầu của bạn',
-        'accept_condition' => 'Bằng cách gửi thông tin của mình, bạn đồng ý cho đội ngũ Licortech liên hệ với bạn.'
+        'accept_condition' => 'Bằng cách gửi thông tin của mình, bạn đồng ý cho đội ngũ Kalend liên hệ với bạn.'
     ],
 ];

@@ -29,7 +29,6 @@
                         <thead class="thead-default">
                             <tr>
                                 <th class="text-center" style="width: 200px">Request</th>
-                                <th>Appointment Date</th>
                                 <th>Client</th>
                                 <th>Action</th>
                             </tr>
@@ -39,25 +38,18 @@
                                 <tr>
                                     <td>
                                         <span style="display: none">{{ date('YmdHi', strtotime($row->created_at)) }}</span>
-                                        <div><small>From:</small>
-                                            <b>{{ config('regions.countries.' . $row->country_code) }}</b></div>
-                                        <div><small>Created:</small> {{ date('d-m-Y H:i', strtotime($row->created_at)) }}
+                                        <div>
+                                            <b>{{ config('regions.countries.' . $row->country_code) }}</b>
                                         </div>
-                                    </td>
-                                    <td>
-                                        <span style="display: none">{{ date('YmdHi', strtotime($row->reserved_at)) }}</span>
-                                        @if ($row->reserved_at)
-                                            <div>
-                                                {{ date('d-m-Y H:i', strtotime($row->reserved_at)) }}</div>
-                                        @endif
+                                        <div>{{ date('d-m-Y H:i', strtotime($row->created_at)) }}</div>
                                     </td>
                                     <td>
                                         <strong class="mb-2">{{ $row->name }}</strong>
-                                        @if ($row->email)
-                                            <div>{{ $row->email }}</div>
-                                        @endif
                                         @if ($row->phone)
                                             <div>{{ $row->phone }}</div>
+                                        @endif
+                                        @if ($row->email)
+                                            <div>{{ $row->email }}</div>
                                         @endif
                                     </td>
                                     <td>

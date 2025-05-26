@@ -77,7 +77,7 @@
 }
 
 .banner-six > .container {
-    margin-top: 40vh;
+    margin-top: 28vh;
 }
 @media (max-width: 376px) {
     .banner-six > .container {
@@ -91,12 +91,21 @@
 
 .hero-image-big {
     position: absolute;
-    bottom: -35%;
+    bottom: 10vh;
     right: 40px;
-    z-index: -1;
+    z-index: 1;
+    width: 80vh;
+    opacity: 0.9;
 }
 
 @media (max-width: 768px) {
+    .hero-image-big {
+        bottom: 12vh;
+        width: 40vh;
+    }
+}
+
+@media (max-width: 426px) {
     .hero-image-big {
         display: none;
     }
@@ -105,4 +114,63 @@
 .rts-hero-two__content .title span {
     font-weight: var(--semibold);
     color: var(--color-primary);
+}
+.rts-hero-banner.banner-six::after {
+    background-image: url(../../assets/images/banner/banner_home_one_dotted.svg);
+    background-position: center;
+    opacity: 0.4;
+    background-repeat: repeat;
+}
+.single__feature--box-icon > svg {
+    width: 40px;
+    height: 40px;
+}
+.card-plan__feature {
+    padding-top: 3rem;
+}
+.rts-pricing-plan .card-plan__feature--list-item .text i {
+    width: 16px;
+}
+
+.progress-wrap svg.progress-circle path {
+    stroke-width: 14px;
+}
+.rts-hero-two__content .title {
+    font-size: 5.5rem;
+    line-height: 6rem;
+}
+@media (max-width: 768px) {
+    .rts-hero-two__content .title {
+        font-size: 4rem;
+        line-height: 4.6rem;
+    }
+}
+.rts-hero-two__content .title span {
+    font-weight: var(--bold);
+}
+
+.description-banner {
+    font-size: 1.8rem;
+    font-family: var(--font-secondary);
+    color: #cacaca;
+    line-height: 30px;
+    margin-bottom: 0;
+}
+.progress-wrap {
+    right: 14px;
+    bottom: 84px;
+}
+.rts-cta-two__wrapper .cta-content {
+    max-width: 660px;
+}
+
+@media (max-width: 450px) {
+    .rts-feature-six .rts-section__title {
+        font-size: 36px;
+    }
+}
+
+.side-bar {
+    height: 100vh;
+    overflow-y: hidden;
 }

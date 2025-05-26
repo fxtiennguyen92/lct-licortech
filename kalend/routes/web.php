@@ -149,15 +149,15 @@ Route::middleware('auth')->prefix('cms')->name('cms.')->group(function() {
 Route::controller(WebPageController::class)->group(function() {
     Route::get('', 'landingpage')->name('home');
 
-    Route::get('about', 'aboutPage')->name('about');
+    // Route::get('about', 'aboutPage')->name('about');
 
-    Route::get('services', 'redirectDefaultServicePage')->name('services');
-    Route::get('services/{route}', 'servicePage')->name('services.page');
+    // Route::get('services', 'redirectDefaultServicePage')->name('services');
+    // Route::get('services/{route}', 'servicePage')->name('services.page');
 
-    //Route::get('blog', 'blogPage')->name('blog');
-    //Route::get('post/{route}', 'postPage')->name('post');
+    // Route::get('blog', 'blogPage')->name('blog');
+    // Route::get('post/{route}', 'postPage')->name('post');
 
-    Route::get('contact', 'contactPage')->name('contact');
+    // Route::get('contact', 'contactPage')->name('contact');
     Route::post('contact', 'submitContact')->name('contact');
 
     Route::get('thanks', 'thanksPage')->name('thanks');

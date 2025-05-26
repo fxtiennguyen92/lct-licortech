@@ -31,7 +31,7 @@ return [
 
     'services' => 'Nos services',
     'view_more' => 'Voir plus',
-    'quick_links' => 'Liens rapides',
+    'quick_links' => 'Liens',
     'languages' => 'Langues',
     'social_media' => 'Réseaux sociaux',
     'reserve_a_call' => 'Réserver un appel',
@@ -44,6 +44,6 @@ return [
         'phone_placeholder' => 'Numéro de téléphone',
         'region_placeholder' => 'Choisissez votre région',
         'message_placeholder' => 'Une brève description de vos besoins',
-        'accept_condition' => "En soumettant vos informations, vous consentez à ce que l'équipe Licortech vous contacte."
+        'accept_condition' => "En soumettant vos informations, vous consentez à ce que l'équipe Kalend vous contacte."
     ],
 ];

@@ -136,8 +136,8 @@ return [
     /**
      * ReCAPTCHA
      */
-    'recaptcha_site_key' => env('RECAPTCHA_SITE_KEY'),
-    'recaptcha_secret_key' => env('RECAPTCHA_SECRET_KEY'),
+    'recaptcha_site_key' => '6LfMnEcrAAAAAHycKVU5Q1RgwPhuSmPsvx1JT5fP',
+    'recaptcha_secret_key' => '6LfMnEcrAAAAAFVjC_j-RHY8kHKrxUgK-3H66aQ7',
 
     /*
     |--------------------------------------------------------------------------
