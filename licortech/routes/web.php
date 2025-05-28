@@ -160,7 +160,7 @@ Route::controller(WebPageController::class)->group(function() {
     Route::get('book-a-call', 'callPage')->name('call');
     Route::post('book-a-call', 'submitCallBooking')->name('call');
 
-    // Route::get('contact', 'contactPage')->name('contact');
+    Route::get('contact', 'contactPage')->name('contact');
     // Route::post('contact', 'submitContact')->name('contact');
 
     Route::get('thanks', 'thanksPage')->name('thanks');

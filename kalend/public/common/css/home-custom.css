@@ -255,3 +255,7 @@
 .rts-section__title {
     margin-bottom: 5px;
 }
+
+.mobile-menu-main nav ul {
+    padding: 0;
+}

@@ -70,7 +70,7 @@
                                                     class="hostie-dropdown-main-element">{{ $navigator->{'name' . $curLanguage} }}</a>
                                             </li>
                                         @else
-                                            <li class="menu-item hostie-has-dropdown mega-menu">
+                                            {{-- <li class="menu-item hostie-has-dropdown mega-menu">
                                                 <div class="hostie-dropdown-main-element">
                                                     {{ $navigator->{'name' . $curLanguage} }}</div>
                                                 <div class="rts-mega-menu">
@@ -93,9 +93,35 @@
                                                         </ul>
                                                     </div>
                                                 </div>
-                                            </li>
+                                            </li> --}}
                                         @endif
                                     @endforeach
+
+                                    <li class="menu-item hostie-has-dropdown mega-menu">
+                                        <a href="#"
+                                            class="hostie-dropdown-main-element">{{ __('text.our_products') }}</a>
+                                        <div class="rts-mega-menu">
+                                            <div class="wrapper">
+                                                <div class="row g-0">
+                                                    <div class="col-lg-12">
+                                                        <ul class="mega-menu-item">
+                                                            <li>
+                                                                <a class="product" href="https://kalend.fr">
+                                                                    <img src="images/products/kalend.png"
+                                                                        alt="Kalend">
+                                                                    <div class="info">
+                                                                        <p>Kalend</p>
+                                                                        <span class="nowrap">Gestion des
+                                                                            réservations</span>
+                                                                    </div>
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
 
                                     <li class="menu-item hostie-has-dropdown">
                                         <div class="hostie-dropdown-main-element">{{ __('text.languages') }}</div>
@@ -131,7 +157,7 @@
         <div class="container">
             <div class="row">
                 <!-- widget -->
-                <div class="col-lg-3 col-md-8 col-sm-6 rts-footer__widget--column">
+                <div class="col-lg-6 col-md-6 col-sm-12 rts-footer__widget--column">
                     <div class="rts-footer__widget footer__widget w-280">
                         <a href="{{ route('home') }}" class="footer__logo">
                             <img src="{{ $common->web_logo }}" alt="{{ $common->web_name }}">
@@ -151,9 +177,9 @@
                     </div>
                 </div>
                 <!-- widget end -->
-                
+
                 <!-- widget -->
-                <div class="col-lg-3 col-md-4 col-sm-6 rts-footer__widget--column">
+                <div class="col-lg-3 col-md-3 col-sm-6 rts-footer__widget--column">
                     <div class="rts-footer__widget footer__widget extra-padding">
                         <h5 class="widget-title">{{ __('text.quick_links') }}</h5>
                         <div class="rts-footer__widget--menu ">
@@ -171,7 +197,7 @@
                 </div>
                 <!-- widget end -->
                 <!-- widget -->
-                <div class="col-lg-3 col-md-4 col-sm-6 rts-footer__widget--column">
+                <div class="col-lg-3 col-md-3 col-sm-6 rts-footer__widget--column">
                     <div class="rts-footer__widget footer__widget">
                         <h5 class="widget-title">{{ __('text.languages') }}</h5>
                         <div class="rts-footer__widget--menu">
@@ -186,6 +212,7 @@
                 </div>
                 <!-- widget end -->
                 <!-- widget -->
+                <!--
                 <div class="col-lg-3 col-md-4 col-sm-6 rts-footer__widget--column">
                     <div class="rts-footer__widget footer__widget">
                         <div class="social__media">
@@ -201,6 +228,7 @@
                         </div>
                     </div>
                 </div>
+                -->
                 <!-- widget end -->
             </div>
         </div>
@@ -231,7 +259,7 @@
                                     class="main">{{ $navigator->{'name' . $curLanguage} }}</a>
                             </li>
                         @else
-                            <li class="has-droupdown">
+                            {{-- <li class="has-droupdown">
                                 <a href="javascript:void(0);"
                                     class="main">{{ $navigator->{'name' . $curLanguage} }}</a>
                                 <ul class="submenu mm-collapse">
@@ -244,11 +272,18 @@
                                         </li>
                                     @endforeach
                                 </ul>
-                            </li>
+                            </li> --}}
                         @endif
                     @endforeach
-                    <li>
-                        <a href="{{ route('call') }}" class="main">{{ __('text.reserve_a_call') }}</a>
+                    <li class="has-droupdown">
+                        <a href="javascript:void(0);" class="main">{{ __('text.our_products') }}</a>
+                        <ul class="submenu mm-collapse">
+                            <li>
+                                <a href="https://kalend.fr" class="mobile-menu-link ms-4" target="_blank">
+                                    Kalend
+                                </a>
+                            </li>
+                        </ul>
                     </li>
                     <li class="has-droupdown">
                         <a href="javascript:void(0);" class="main">{{ __('text.languages') }}</a>
@@ -263,13 +298,13 @@
                 </ul>
             </nav>
 
-            <ul class="social-area-one pl--20 mt--100">
+            {{-- <ul class="social-area-one pl--20 mt--100">
                 <li><a href="{{ $common->facebook }}" aria-label="facebook"><i
                             class="fa-brands fa-facebook-f"></i></a></li>
                 <li><a href="{{ $common->linkedin }}" aria-label="linkedin"><i
                             class="fa-brands fa-linkedin"></i></a></li>
                 <li><a href="{{ $common->x }}" aria-label="x"><i class="fa-brands fa-x-twitter"></i></a></li>
-            </ul>
+            </ul> --}}
         </div>
         <!-- mobile menu area end -->
     </div>

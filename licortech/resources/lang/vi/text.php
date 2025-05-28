@@ -48,4 +48,6 @@ return [
         'message_placeholder' => 'Mô tả ngắn gọn về yêu cầu của bạn',
         'accept_condition' => 'Bằng cách gửi thông tin của mình, bạn đồng ý cho đội ngũ Licortech liên hệ với bạn.'
     ],
+
+    'our_products' => 'Giải pháp'
 ];

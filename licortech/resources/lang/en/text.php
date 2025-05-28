@@ -46,4 +46,6 @@ return [
         'message_placeholder' => 'A brief description about your requirements',
         'accept_condition' => 'By submitting your information, you consent to the Licortech team contacting you.'
     ],
+
+    'our_products' => 'Our solutions'
 ];

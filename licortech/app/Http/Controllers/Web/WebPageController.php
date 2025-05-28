@@ -59,6 +59,8 @@ class WebPageController extends Controller
 
     public function contactPage()
     {
+        return redirect()->route('call');
+
         return view('landingpage.contact', array(
             'data' => Page::getByCode('contact'),
             'enabledDates' => $this->listEnableDates(),
