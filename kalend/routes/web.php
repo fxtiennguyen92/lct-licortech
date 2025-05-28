@@ -149,6 +149,12 @@ Route::middleware('auth')->prefix('cms')->name('cms.')->group(function() {
 Route::controller(WebPageController::class)->group(function() {
     Route::get('', 'landingpage')->name('home');
 
+    Route::get('legal-notice', 'legalNoticePage')->name('legal-notice');
+    Route::get('privacy-policy', 'privacyPolicyPage')->name('privacy-policy');
+    Route::get('terms-conditions', 'termsConditionsPage')->name('terms-conditions');
+    Route::get('cookie-policy', 'cookiePolicyPage')->name('cookie-policy');
+    
+
     // Route::get('about', 'aboutPage')->name('about');
 
     // Route::get('services', 'redirectDefaultServicePage')->name('services');

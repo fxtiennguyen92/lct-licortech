@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ config('app.locale') }}">
+<html lang="fr">
 
 <head>
     <meta charset="utf-8">
@@ -17,7 +17,7 @@
     </title>
 
     <base href="{{ asset('') }}">
-    
+
     <link rel="icon" type="image/png" href="favicon/favicon-96x96.png" sizes="96x96" />
     <link rel="icon" type="image/svg+xml" href="favicon/favicon.svg" />
     <link rel="shortcut icon" href="favicon/favicon.ico" />
@@ -47,11 +47,10 @@
     {{-- <link rel="stylesheet"
         href="https://cdn.jsdelivr.net/gh/eliyantosarage/font-awesome-pro@main/fontawesome-pro-6.5.1-web/css/all.min.css"
         rel="stylesheet" async> --}}
-    <link rel="stylesheet preload" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" async  as="style">
+    <link rel="stylesheet preload" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" async
+        as="style">
     <link rel="stylesheet preload" href="assets/css/style.min.css" as="style">
     <link rel="stylesheet preload" href="common/css/home-custom.css?{{ now()->format('his') }}" as="style">
-
-    <script src="https://www.google.com/recaptcha/api.js?render={{ config('app.recaptcha_site_key') }}"></script>
 
     @stack('css')
 
@@ -79,56 +78,16 @@
                                 @foreach ($nav as $navigator)
                                     @if ($navigator->redirect != 'services')
                                         <li class="menu-item">
-                                            <a href="{{ $navigator->page_id ? route($navigator->redirect) : $navigator->redirect }}"
+                                            <a href="{{ route('home') }}"
                                                 class="hostie-dropdown-main-element">{{ $navigator->{'name' . $curLanguage} }}</a>
-                                        </li>
-                                    @else
-                                        <li class="menu-item hostie-has-dropdown mega-menu">
-                                            <div class="hostie-dropdown-main-element">
-                                                {{ $navigator->{'name' . $curLanguage} }}</div>
-                                            <div class="rts-mega-menu">
-                                                <div class="wrapper">
-                                                    <ul class="mega-menu-item">
-                                                        @foreach ($navServices as $navServ)
-                                                            <li>
-                                                                <a
-                                                                    href="{{ route('services.page', $navServ->route) }}">
-                                                                    <img class="lazyload"
-                                                                        data-src="{{ $navServ->image }}"
-                                                                        alt="service">
-                                                                    <div class="info">
-                                                                        <p>{{ $navServ->{'name' . $curLanguage} }}
-                                                                        </p>
-                                                                    </div>
-                                                                </a>
-                                                            </li>
-                                                        @endforeach
-                                                    </ul>
-                                                </div>
-                                            </div>
                                         </li>
                                     @endif
                                 @endforeach
-
-                                <li class="menu-item hostie-has-dropdown">
-                                    <div class="hostie-dropdown-main-element">{{ __('text.languages') }}</div>
-                                    <ul class="hostie-submenu list-unstyled menu-pages">
-                                        @foreach ($languages as $lang)
-                                            <li class="nav-item">
-                                                <a class="nav-link"
-                                                    href="{{ route('locale.change', $lang->code) }}">{{ $lang->name }}</a>
-                                            </li>
-                                        @endforeach
-                                    </ul>
-                                </li>
                             </ul>
                         </div>
                     </nav>
                     <!-- FOR HEADER RIGHT -->
                     <div class="rts-header__right">
-                        <div class="button-area">
-                            <a href="#contact" class="get-started__btn ">{{ __('text.contact_us') }}</a>
-                        </div>
                         <button id="menu-btn" aria-label="Menu" class="mobile__active menu-btn"><i
                                 class="fa-solid fa-bars"></i></button>
                     </div>
@@ -252,7 +211,7 @@
                     @foreach ($nav as $navigator)
                         @if ($navigator->redirect != 'services')
                             <li>
-                                <a href="{{ $navigator->page_id ? route($navigator->redirect) : $navigator->redirect }}"
+                                <a href="{{ route('home') }}"
                                     class="main">{{ $navigator->{'name' . $curLanguage} }}</a>
                             </li>
                         @else

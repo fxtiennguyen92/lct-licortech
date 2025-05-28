@@ -77,6 +77,22 @@ class WebPageController extends Controller
         ));
     }
 
+    public function legalNoticePage() {
+        return view('landingpage.legal_notice');
+    }
+
+    public function privacyPolicyPage() {
+        return view('landingpage.privacy_policy');
+    }
+
+    public function termsConditionsPage() {
+        return view('landingpage.terms_conditions');
+    }
+
+    public function cookiePolicyPage() {
+        return view('landingpage.cookie_policy');
+    }
+
     public function thanksPage()
     {
         return view('landingpage.thanks', array(
@@ -87,19 +103,17 @@ class WebPageController extends Controller
     public function submitContact(Request $request)
     {
         try {
-            // $token = $request->input('g-recaptcha-response');
-            // $response = Http::asForm()->post(
-            //     'https://www.google.com/recaptcha/api/siteverify',
-            //     [
-            //         'secret' => config('app.recaptcha_secret_key'),
-            //         'response' => $token,
-            //     ]
-            // );
+            $recaptchaToken = $request->input('recaptcha_token');
+            $response = Http::asForm()->post('https://www.google.com/recaptcha/api/siteverify', [
+                'secret'   => config('app.recaptcha_secret_key'),
+                'response' => $recaptchaToken,
+            ]);
 
-            // $result = $response->json();
-            // if (!($result['success'] ?? false) || ($result['score'] ?? 0) < 0.5) {
-            //     return back()->withInput()->with('error', trans('message.submit_contact_recaptcha_invalid'));
-            // }
+            $result = $response->json();
+
+            if (!($result['success'] ?? false) || ($result['score'] ?? 0) < 0.5) {
+                return back()->withInput()->with('error', trans('message.submit_contact_recaptcha_invalid'));
+            }
 
 
             if ($request->name) {

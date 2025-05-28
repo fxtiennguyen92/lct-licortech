@@ -27,7 +27,7 @@
     <section class="hero-banner-slide position-relative fix">
         <div class="rts-hero-banner banner-six">
             <div class="container">
-                <div class="row justify-content-md-center">
+                <div class="row">
                     <div class="col-xl-6 col-lg-6 col-md-10 order-md-2 order-lg-0">
                         <div class="rts-hero-two__content">
                             <h1 class="title">
@@ -43,10 +43,9 @@
                     </div>
                     <div class="col-xl-4 offset-xl-1 col-lg-5 col-md-10">
                         <div class="hero-image-big">
-                            <img src="images/banner/home.png" alt="{{ $banner->code }}">
+                            <img src="images/banner/home_banner.png" alt="{{ $banner->code }}">
                         </div>
                     </div>
-
                 </div>
             </div>
 
@@ -400,8 +399,7 @@
                         <div class="contact-form__content sal-animate" data-sal="slide-down" data-sal-delay="100"
                             data-sal-duration="800">
                             <div class="contact-form__content--image">
-                                <img src="assets/images/contact-form.png" width="260" height="188"
-                                    alt="">
+                                <img src="assets/images/contact-form.png" width="260" height="188" alt="">
                             </div>
                             <h1 class="contact-form__content--title">
                                 {!! $content->texts[0]->{'title' . $curLanguage} !!}
@@ -439,11 +437,15 @@
                                 @endif
                             </div>
 
-                            <label>{{ __('text.contact.accept_condition') }}</label>
+                            <label class="mb-2 mt-0">{{ __('text.contact.accept_condition') }}</label>
 
-                            <div class="g-recaptcha mb-4" data-sitekey="{{ config('app.recaptcha_site_key') }}"
-                                data-action="CONTACT"></div>
-                            <button type="submit" class="submit__btn">{{ __('button.submit') }}</button>
+                            <input type="hidden" name="recaptcha_token" id="recaptcha-token">
+                            <button type="submit" class="submit__btn mb-5">{{ __('button.submit') }}</button>
+
+                            <small>Ce site est protégé par reCAPTCHA, et la <a class="fw-500 text-decoration-underline"
+                                    href="https://policies.google.com/privacy?hl=fr" target="_blank">Politique de
+                                    confidentialité</a> et les <a class="fw-500 text-decoration-underline" href="https://policies.google.com/terms?hl=fr"
+                                    target="_blank">Conditions d'utilisation</a> de Google s'appliquent.</small>
                         </form>
                     </div>
                 </div>
@@ -459,6 +461,14 @@
     <script src="vendors/jquery/dist/jquery.min.js"></script>
     <script src="vendors/remarkable-bootstrap-notify/dist/bootstrap-notify.js"></script>
     <script>
+        grecaptcha.ready(function() {
+            grecaptcha.execute(@json(config('app.recaptcha_site_key')), {
+                action: 'contact'
+            }).then(function(token) {
+                document.getElementById('recaptcha-token').value = token;
+            });
+        });
+
         @if (Session::has('error'))
             $.notify({
                 title: "<strong>{{ trans('message.error') }}!</strong> ",
